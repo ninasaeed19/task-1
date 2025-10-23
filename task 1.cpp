@@ -90,7 +90,7 @@ void test_comparisons() {
 
     // two files for Excel
     ofstream comp("comparisons.csv"); // for number of comparisons
-    ofstream times("time.csv");       // for execution time (seconds)
+    ofstream times("time.csv");       // for execution time 
 
     // first line in each file = column headers
     comp << "Size,Case,Bubble,Selection,Insertion\n";
@@ -98,8 +98,8 @@ void test_comparisons() {
 
     int arr[100]; // array large enough for all tests
 
-    // test array sizes from 5 to 10
-    for (int n = 5; n <= 10; n++) {
+    
+    for (int n = 5; n <= 30; n++) {
         cout << "\nTesting array size: " << n << " \n";
 
         // random array
